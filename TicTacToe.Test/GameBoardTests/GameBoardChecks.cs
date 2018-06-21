@@ -33,7 +33,7 @@ namespace TicTacToe.Test.GameBoardTests
             _gameBoard.Update(cords);
             Assert.AreEqual(_gameBoard.Cordinates.Count(x => x.IsOccupied == false), 8);
             Assert.AreEqual(_gameBoard.Cordinates.Count(x => x.IsOccupied), 1);
-            Assert.AreEqual(_gameBoard.Cordinates.Single(x => x.X == cords.X && x.Y == cords.Y).Symbol,'X');
+            Assert.AreEqual(_gameBoard.Cordinates.Single(x => x.X == cords.X && x.Y == cords.Y).Symbol, 'X');
         }
 
         [Test]
@@ -46,16 +46,6 @@ namespace TicTacToe.Test.GameBoardTests
             Assert.AreEqual(_gameBoard.Cordinates.Count(x => x.IsOccupied == false), 9);
             Assert.AreEqual(_gameBoard.Cordinates.Count(x => x.Symbol == '*'), 9);
         }
-
-
-
-
-
-
-
-
-
-
     }
 }
 
