@@ -4,7 +4,7 @@ using System.Linq;
 using NUnit.Framework;
 using TicTacToe.Core.GameRules;
 
-namespace TicTacToe.Test.GameRuleTests
+namespace TicTacToe.UnitTests.GameRuleTests
 {
     public class SquareWinningCordinateSetGeneratorTests
     {

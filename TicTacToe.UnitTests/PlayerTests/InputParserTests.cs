@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using TicTacToe.Core.Players;
 
-namespace TicTacToe.Test.PlayerTests
+namespace TicTacToe.UnitTests.PlayerTests
 {
     
     public class InputParserTests

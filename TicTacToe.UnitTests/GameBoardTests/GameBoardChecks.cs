@@ -5,7 +5,7 @@ using NUnit.Framework;
 using TicTacToe.Core.Game;
 using TicTacToe.Core.Players;
 
-namespace TicTacToe.Test.GameBoardTests
+namespace TicTacToe.UnitTests.GameBoardTests
 {
 
     public class GameBoardChecks

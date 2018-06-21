@@ -4,7 +4,7 @@ using NUnit.Framework;
 using TicTacToe.Core.GameRules;
 using TicTacToe.Core.Players;
 
-namespace TicTacToe.Test.GameRuleTests
+namespace TicTacToe.UnitTests.GameRuleTests
 {
     public class CordinateSetTests
     {

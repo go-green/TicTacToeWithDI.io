@@ -1,5 +1,5 @@
 ﻿
-using System;
+
 using System.Collections.Generic;
 using Ninject;
 using Ninject.Modules;
@@ -12,7 +12,7 @@ using TicTacToe.Core.Logger.Contracts;
 using TicTacToe.Core.Players;
 using TicTacToe.Core.Players.Contracts;
 
-namespace TicTacToe.Game
+namespace TicTacToe.Program
 {
     public class Bindings : NinjectModule
     {

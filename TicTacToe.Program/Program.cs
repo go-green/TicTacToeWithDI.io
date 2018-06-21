@@ -1,9 +1,7 @@
-
+﻿
 using System.Reflection;
 using Ninject;
-using TicTacToe.Core.Game;
 using TicTacToe.Core.Game.Contracts;
-using TicTacToe.Core.Players.Contracts;
 
 namespace TicTacToe.Program
 {

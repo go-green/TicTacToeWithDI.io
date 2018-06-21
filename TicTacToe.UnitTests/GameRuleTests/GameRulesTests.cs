@@ -8,7 +8,7 @@ using TicTacToe.Core.GameRules;
 using TicTacToe.Core.GameRules.Contracts;
 using TicTacToe.Core.Players;
 
-namespace TicTacToe.Test.GameRuleTests
+namespace TicTacToe.UnitTests.GameRuleTests
 {
     public class GameRulesTests
     {
