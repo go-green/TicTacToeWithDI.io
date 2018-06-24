@@ -40,8 +40,6 @@ namespace TicTacToe.Core.Game
         public void UpdatePlayer(Cordinate cords)
         {
             Status.CurrentPlayer.MoveCount++;
-            cords.Symbol = Status.CurrentPlayer.Symbol;
-            cords.IsOccupied = true;
         }
 
         public void SwitchPlayer()

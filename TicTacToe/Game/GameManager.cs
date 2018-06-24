@@ -31,6 +31,7 @@ namespace TicTacToe.Core.Game
         public void Play()
         {
             var moveResult = PlayerTakeTurn();
+            IsPositionOccupied(moveResult);
             while (GameNotFinished())
             {
                 switch (moveResult.Status)

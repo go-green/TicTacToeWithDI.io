@@ -7,11 +7,7 @@ namespace TicTacToe.Core.Game
     {
         private void ScanTheBoard(MoveResult result)
         {
-            if (_gameRules.Scan(result.Cordinate).Status == MoveStatus.AlreadyOccupied)
-            {
-                PrintAlreadyOccupiedMessage();
-            }
-            else if (_gameRules.GameFinished())
+            if (_gameRules.GameFinished())
             {
                 PrintGameFinishedMessage();
                 Stop();
@@ -24,6 +20,14 @@ namespace TicTacToe.Core.Game
             else
             {
                 PrintMoveAcceptedMessage();
+            }
+        }
+
+        private void IsPositionOccupied(MoveResult result)
+        {
+            if (_gameRules.Scan(result.Cordinate).Status == MoveStatus.AlreadyOccupied)
+            {
+                PrintAlreadyOccupiedMessage();
             }
         }
 
