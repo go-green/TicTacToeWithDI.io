@@ -25,9 +25,9 @@ namespace TicTacToe.Core.Game
 
         private void IsPositionOccupied(MoveResult result)
         {
-            if (_gameRules.Scan(result.Cordinate).Status == MoveStatus.AlreadyOccupied)
+            if (_gameRules.Scan(result).Status == MoveStatus.AlreadyOccupied)
             {
-                PrintAlreadyOccupiedMessage();
+                result.Status = MoveStatus.AlreadyOccupied;
             }
         }
 

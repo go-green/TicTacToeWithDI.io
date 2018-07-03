@@ -6,7 +6,7 @@ namespace TicTacToe.Core.GameRules.Contracts
     public interface IGameRule
     {
         bool Validate(IEnumerable<Cordinate> cordinates);
-        MoveResult Scan(Cordinate cordinate);
+        MoveResult Scan(MoveResult cordinate);
         bool GameFinished();
         bool GameDraws();
     }

@@ -27,16 +27,14 @@ namespace TicTacToe.Core.GameRules
             return _winningCordinateSets.Any(x => CompareWithPlayerCordinates(x.Get()));
         }
 
-        public MoveResult Scan(Cordinate cordinate)
+        public MoveResult Scan(MoveResult result)
         {
-            var isOccupied =  _gameStatus.CurrentBoard.Cordinates.Single(x => x.X == cordinate.X && x.Y == cordinate.Y).IsOccupied;
-            var result = new MoveResult();
+            var isOccupied =  _gameStatus.CurrentBoard.Cordinates.Single(x => x.X == result.Cordinate.X && x.Y == result.Cordinate.Y).IsOccupied;
             if (isOccupied)
             {
                 result.Status = MoveStatus.AlreadyOccupied;
                 return result;
             }
-            result.Status = MoveStatus.MoveToNextRule;
             return result;
         }
 

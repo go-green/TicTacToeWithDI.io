@@ -31,9 +31,9 @@ namespace TicTacToe.Core.Game
         public void Play()
         {
             var moveResult = PlayerTakeTurn();
-            IsPositionOccupied(moveResult);
             while (GameNotFinished())
             {
+                IsPositionOccupied(moveResult);
                 switch (moveResult.Status)
                 {
                     case MoveStatus.Invalid:
@@ -46,6 +46,9 @@ namespace TicTacToe.Core.Game
                         break;
                     case MoveStatus.Skpipped:
                         SwitchPlayer();
+                        break;
+                    case MoveStatus.AlreadyOccupied:
+                        PrintAlreadyOccupiedMessage();
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
